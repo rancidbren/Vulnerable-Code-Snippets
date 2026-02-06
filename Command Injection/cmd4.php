@@ -8,6 +8,6 @@
 
 <pre>
 <?php
-    system("whois " . $_POST["domain"]);
+    system("whois " . escapeshellarg($_POST["domain"]));
  ?>
 </pre>
